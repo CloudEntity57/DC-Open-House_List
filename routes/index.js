@@ -8,7 +8,6 @@ var formData = new FormData();
 var curl = require('curlrequest');
 
 
-
 // let domain = (process.env.NODE_ENV==='development') ? 'http://localhost:3000' : 'http://vast-shore-14133.herokuapp.com';
 // let domain = 'http://localhost:3000';
 
