@@ -190,7 +190,7 @@ class Search extends Component{
       subd='Deanwood';
       break;
       case 'dupontcircle':
-      subd='duPont Circle';
+      subd='Dupont Circle';
       break;
       case 'eckington':
       subd='Eckington';
