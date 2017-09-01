@@ -13,7 +13,10 @@ var curl = require('curlrequest');
 
 // let apiKey=process.env.DISPLET_API_KEY;
 let apiKey = '82b44a7662b0abb55eebf365a61c50399b512935';
-let domain = 'http://vast-shore-14133.herokuapp.com';
+
+//original heroku app:
+// let domain = 'http://vast-shore-14133.herokuapp.com';
+let doman = 'https://dcopenhouse.herokuapp.com/';
 
 // let domain = 'http://localhost:3000";
 

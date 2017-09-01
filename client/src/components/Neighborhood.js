@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import axios from 'axios'
 // let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
 
-let apiKey="http://vast-shore-14133.herokuapp.com";
 
-// let apiKey = "http://localhost:8080";
+//original heroku app:
+// let apiKey="http://vast-shore-14133.herokuapp.com";
+let apiKey= "https://dcopenhouse.herokuapp.com/";
+
+
+// let apiKey = "http://localhost:8https://dcopenhouse.herokuapp.com/0;80";
 
 
 class Neighborhood extends Component{

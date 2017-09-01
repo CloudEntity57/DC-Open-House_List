@@ -8,7 +8,10 @@ import moment from 'moment';
 import ReactMap from './ReactMap';
 // let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
 
-let apiKey="http://vast-shore-14133.herokuapp.com";
+
+//oringal herokuapp:
+// let apiKey="http://vast-shore-14133.herokuapp.com";
+let apiKey="https://dcopenhouse.herokuapp.com/";
 
 // let apiKey = "http://localhost:8080";
 
