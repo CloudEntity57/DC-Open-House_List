@@ -8,9 +8,9 @@ let app_status = process.env.REACT_APP_STATUS;
 console.log('listingjs env: ',app_status);
 // let apiKey = (process.env.REACT_APP_STATUS === 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
 
-//original herokuapp
-// let apiKey="http://vast-shore-14133.herokuapp.com";
-let apiKey="https://morning-wave-32216.herokuapp.com";
+//original heroku app
+let apiKey="http://vast-shore-14133.herokuapp.com";
+//let apiKey="https://morning-wave-32216.herokuapp.com";
 
 // let apiKey = "http://localhost:8080";
 

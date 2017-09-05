@@ -14,9 +14,9 @@ const google = window.google;
 // let apiKey = "http://localhost:8080";
 
 // original herokuapp:
-// let apiKey="http://vast-shore-14133.herokuapp.com";
+let apiKey="http://vast-shore-14133.herokuapp.com";
 
-let apiKey="https://morning-wave-32216.herokuapp.com"
+// let apiKey="https://morning-wave-32216.herokuapp.com"
 
 console.log('listingjs env: ',process.env.REACT_APP_STATUS);
 
