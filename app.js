@@ -60,6 +60,10 @@ app.use(function(err, req, res, next) {
 });
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d2ad3ba843e5d7d9605fc7b7e04b07fe48592d1
 const PORT = process.env.PORT || 8080;
 
 
