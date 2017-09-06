@@ -657,7 +657,7 @@ class Results extends Component{
 
 
 
-    let spinner = (<div className="no-results-msg">Searching for {subd} open houses{today} Thanks for your patience.<br/><img className="spinner" src={require("../images/loadcontent.gif")} alt="please wait"/></div>);
+    let spinner = (<div className="no-results-msg">Searching for {subd} open houses{today}. Thanks for your patience.<br/><img className="spinner" src={require("../images/loadcontent.gif")} alt="please wait"/></div>);
     results = (results) ? results.filter((val)=>{
       if(val){
         return val;
