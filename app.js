@@ -20,7 +20,7 @@ console.log('port: ',process.env.PORT);
 mongoose.connect(process.env.DB_CONN_TEST,{useMongoClient:true});
 // app.set('port', ('8080'));
 
-// uncomment after placing your favicon in /public
+// bootstrap_node.js after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(cors());
 app.use(logger('dev'));
@@ -60,10 +60,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 9d2ad3ba843e5d7d9605fc7b7e04b07fe48592d1
 const PORT = process.env.PORT || 8080;
 
 
