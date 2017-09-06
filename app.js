@@ -21,7 +21,7 @@ mongoose.connect(process.env.DB_CONN_TEST,{useMongoClient:true});
 // app.set('port', ('8080'));
 
 // bootstrap_node.js after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
