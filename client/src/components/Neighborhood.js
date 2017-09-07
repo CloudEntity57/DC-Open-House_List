@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
 
 
 //original heroku app:
-let apiKey="http://vast-shore-14133.herokuapp.com";
+let apiKey="https://vast-shore-14133.herokuapp.com";
 //let apiKey="https://morning-wave-32216.herokuapp.com";
 
 
