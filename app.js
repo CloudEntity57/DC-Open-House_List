@@ -33,9 +33,7 @@ app.use('/users', users);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('./client/build'));
 }
-
-//uncommented line 38 to test
-app.use('/',express.static('client/build'));
+//app.use('/',express.static('client/build'));
 app.use('/info', index);
 app.use('/',express.static('client/build'));
 
