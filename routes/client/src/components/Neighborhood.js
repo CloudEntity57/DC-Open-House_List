@@ -17,7 +17,7 @@ class Neighborhood extends Component{
 =======
     let neighborhoods = ["Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Columbia Heights", "Deanwood", "duPont Circle", "Eckington", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend"];
 >>>>>>> 9d2ad3ba843e5d7d9605fc7b7e04b07fe48592d1
-    // axios.get('http://localhost:8080/info/neighborhoods').then(
+    // axios.get('https://localhost:8080/info/neighborhoods').then(
     //   (neighborhoods)=>{
     //     console.log('neighborhoods: ',neighborhoods.data);
     //     neighborhoods = neighborhoods.data;
