@@ -15,7 +15,7 @@ class Neighborhood extends Component{
 <<<<<<< HEAD
     let neighborhoods = ["Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend"];
 =======
-    let neighborhoods = ["Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Columbia Heights", "Deanwood", "duPont Circle", "Eckington", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend"];
+    let neighborhoods = ["Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend"];
 >>>>>>> 9d2ad3ba843e5d7d9605fc7b7e04b07fe48592d1
     // axios.get('https://localhost:8080/info/neighborhoods').then(
     //   (neighborhoods)=>{
@@ -86,7 +86,7 @@ class Neighborhood extends Component{
 <<<<<<< HEAD
         case 'Dupont Circle':
 =======
-        case 'duPont Circle':
+        case 'Dupont Circle':
 >>>>>>> 9d2ad3ba843e5d7d9605fc7b7e04b07fe48592d1
         id='dupontcircle';
         break;
