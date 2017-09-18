@@ -8,12 +8,16 @@ var formData = new FormData();
 var curl = require('curlrequest');
 
 
-// let domain = (process.env.NODE_ENV==='development') ? 'https://localhost:3000' : 'https://vast-shore-14133.herokuapp.com';
+// let domain = (process.env.NODE_ENV==='development') ? 'https://localhost:3000' : 'https://test-dcoh.herokuapp.com';
 // let domain = 'https://localhost:3000';
 
 // let apiKey=process.env.DISPLET_API_KEY;
 let apiKey = '82b44a7662b0abb55eebf365a61c50399b512935';
-let domain = 'https://vast-shore-14133.herokuapp.com';
+
+//original
+// let domain = 'https://test-dcoh.herokuapp.com';
+
+let domain = 'https://test-dcoh.herokuapp.com';
 
 // let domain = 'https://localhost:3000";
 
