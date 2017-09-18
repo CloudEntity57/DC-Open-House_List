@@ -532,7 +532,7 @@ class Results extends Component{
         let today ='';
         switch(this.props.params.day){
           case 'saturday':
-          today = ' DSaturday';
+          today = ' DDSaturday';
           break;
           case 'sunday':
           today = ' Sunday';
