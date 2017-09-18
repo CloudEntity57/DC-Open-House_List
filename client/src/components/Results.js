@@ -6,9 +6,9 @@ import currency from 'currency-formatter';
 import moment from 'moment';
 // import _ from "lodash";
 import ReactMap from './ReactMap';
-// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://test-dcoh.herokuapp.com";
 
-let apiKey="https://vast-shore-14133.herokuapp.com";
+let apiKey="https://test-dcoh.herokuapp.com";
 
 // let apiKey = "https://localhost:8080";
 
