@@ -1,45 +1,63 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'app.json',
+1 verbose cli   '--global' ]
 2 info using npm@3.10.10
 3 info using node@v6.11.2
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle dc-openhouselist@0.0.0~prestart: dc-openhouselist@0.0.0
-6 silly lifecycle dc-openhouselist@0.0.0~prestart: no script for prestart, continuing
-7 info lifecycle dc-openhouselist@0.0.0~start: dc-openhouselist@0.0.0
-8 verbose lifecycle dc-openhouselist@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle dc-openhouselist@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/hannahschuster/Projects/DC_OpenHouseList/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-10 verbose lifecycle dc-openhouselist@0.0.0~start: CWD: /Users/hannahschuster/Projects/DC_OpenHouseList
-11 silly lifecycle dc-openhouselist@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
-12 silly lifecycle dc-openhouselist@0.0.0~start: Returned: code: 1  signal: null
-13 info lifecycle dc-openhouselist@0.0.0~start: Failed to exec start script
-14 verbose stack Error: dc-openhouselist@0.0.0 start: `node ./bin/www`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
-14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at EventEmitter.emit (events.js:191:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
-14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:891:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
-15 verbose pkgid dc-openhouselist@0.0.0
-16 verbose cwd /Users/hannahschuster/Projects/DC_OpenHouseList
-17 error Darwin 16.6.0
-18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
-19 error node v6.11.2
-20 error npm  v3.10.10
-21 error code ELIFECYCLE
-22 error dc-openhouselist@0.0.0 start: `node ./bin/www`
-22 error Exit status 1
-23 error Failed at the dc-openhouselist@0.0.0 start script 'node ./bin/www'.
-23 error Make sure you have the latest version of node.js and npm installed.
-23 error If you do, this is most likely a problem with the dc-openhouselist package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     node ./bin/www
-23 error You can get information on how to open an issue for this project with:
-23 error     npm bugs dc-openhouselist
-23 error Or if that isn't available, you can get their info via:
-23 error     npm owner ls dc-openhouselist
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData app.json
+8 silly fetchOtherPackageData app.json
+9 silly cache add args [ 'app.json', null ]
+10 verbose cache add spec app.json
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'app.json',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: 'app.json',
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'app.json',
+11 silly cache add   spec: '/Users/hannahschuster/Projects/DC_OpenHouseList/app.json',
+11 silly cache add   type: 'local' }
+12 silly addLocalTarball shasum (computed) da39a3ee5e6b4b0d3255bfef95601890afd80709
+13 verbose addTmpTarball /Users/hannahschuster/Projects/DC_OpenHouseList/app.json not in flight; adding
+14 verbose correctMkdir /Users/hannahschuster/.npm correctMkdir not in flight; initializing
+15 verbose addTmpTarball validating metadata from /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
+16 verbose tar unpack /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
+17 verbose tar unpacking to /var/folders/v6/851tdnfx0659xd8t1mxzrdtc0000gn/T/npm-34168-f614f58b/unpack-6538ecd6
+18 silly gentlyRm /var/folders/v6/851tdnfx0659xd8t1mxzrdtc0000gn/T/npm-34168-f614f58b/unpack-6538ecd6 is being purged
+19 verbose gentlyRm don't care about contents; nuking /var/folders/v6/851tdnfx0659xd8t1mxzrdtc0000gn/T/npm-34168-f614f58b/unpack-6538ecd6
+20 silly gunzTarPerm modes [ '755', '644' ]
+21 error tar.unpack error reading /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
+22 error addLocal Could not install /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
+23 silly fetchPackageMetaData Error: 0-byte tarball
+23 silly fetchPackageMetaData Please run `npm cache clean`
+23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:287:14
+23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
+23 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+23 silly fetchPackageMetaData  error for app.json Error: 0-byte tarball
+23 silly fetchPackageMetaData Please run `npm cache clean`
+23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:287:14
+23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
+23 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Finishing
+27 silly install printInstalled
+28 verbose stack Error: 0-byte tarball
+28 verbose stack Please run `npm cache clean`
+28 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:287:14
+28 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
+28 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+29 verbose cwd /Users/hannahschuster/Projects/DC_OpenHouseList
+30 error Darwin 16.6.0
+31 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "app.json" "--global"
+32 error node v6.11.2
+33 error npm  v3.10.10
+34 error 0-byte tarball
+34 error Please run `npm cache clean`
+35 error If you need help, you may report this error at:
+35 error     <https://github.com/npm/npm/issues>
+36 verbose exit [ 1, true ]
