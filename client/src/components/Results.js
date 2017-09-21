@@ -6,11 +6,19 @@ import currency from 'currency-formatter';
 import moment from 'moment';
 // import _ from "lodash";
 import ReactMap from './ReactMap';
+<<<<<<< HEAD
 // let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "https://infinite-brook-26465.herokuapp.com";
 
 // let apiKey="https://dcopenhouselist.herokuapp.com";
 
 let apiKey = "http://localhost:8080";
+=======
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
+
+let apiKey="https://vast-shore-14133.herokuapp.com";
+
+// let apiKey = "https://localhost:8080";
+>>>>>>> b0245cdd0b07383980950165820e4aa792227933
 
 
 class Results extends Component{
@@ -525,10 +533,10 @@ class Results extends Component{
         let today ='';
         switch(this.props.params.day){
           case 'saturday':
-          today = ' on SSSaturday';
+          today = ' Saturday';
           break;
           case 'sunday':
-          today = ' on SSSunday';
+          today = ' Sunday';
           break;
           default:
           today = '.'

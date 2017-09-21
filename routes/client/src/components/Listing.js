@@ -19,7 +19,7 @@ class Listing extends Component{
     }
   }
   componentWillMount(){
-    // axios.get('http://localhost:8080/info/open_houses').then(
+    // axios.get('https://localhost:8080/info/open_houses').then(
     //   (response)=>{
         console.log('axios: ',this.props.listing);
         let listing = this.props.listing
@@ -147,7 +147,7 @@ class Listing extends Component{
       phone,
       textarea
     }
-    axios.post('http://localhost:8080/info/submitform',data).then((response)=>{
+    axios.post('https://localhost:8080/info/submitform',data).then((response)=>{
       console.log('successfully submitted',response);
     }).catch((err)=>{
       console.log('err - ',err);

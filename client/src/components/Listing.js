@@ -9,11 +9,11 @@ import currency from 'currency-formatter';
 import $ from 'jquery';
 import moment from 'moment';
 const google = window.google;
-// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "https://infinite-brook-26465.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
 
-let apiKey = "http://localhost:8080";
+// let apiKey = "https://localhost:8080";
 
-// let apiKey="https://dcopenhouselist.herokuapp.com";
+let apiKey="https://vast-shore-14133.herokuapp.com";
 
 console.log('listingjs env: ',process.env.REACT_APP_STATUS);
 

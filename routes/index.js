@@ -9,14 +9,14 @@ var curl = require('curlrequest');
 var dcdata = require('./dcjson.json');
 
 
-// let domain = (process.env.NODE_ENV==='development') ? 'http://localhost:3000' : 'https://infinite-brook-26465.herokuapp.com';
-// let domain = 'http://localhost:3000';
+// let domain = (process.env.NODE_ENV==='development') ? 'https://localhost:3000' : 'https://vast-shore-14133.herokuapp.com';
+// let domain = 'https://localhost:3000';
 
 // let apiKey=process.env.DISPLET_API_KEY;
 let apiKey = '82b44a7662b0abb55eebf365a61c50399b512935';
-let domain = 'https://infinite-brook-26465.herokuapp.com';
+let domain = 'https://vast-shore-14133.herokuapp.com';
 
-// let domain = 'http://localhost:3000";
+// let domain = 'https://localhost:3000";
 
 
 
