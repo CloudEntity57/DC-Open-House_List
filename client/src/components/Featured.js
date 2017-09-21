@@ -11,7 +11,7 @@ let app_status = process.env.REACT_APP_STATUS;
 let expect = chai.expect();
 console.log('listingjs env: ',app_status);
 // mocha.run();
-// let apiKey = (process.env.REACT_APP_STATUS === 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS === 'development') ? "http://localhost:8080" : "https://infinite-brook-26465.herokuapp.com";
 
 // let apiKey="https://dcopenhouselist.herokuapp.com";
 

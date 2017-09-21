@@ -9,7 +9,7 @@ import currency from 'currency-formatter';
 import $ from 'jquery';
 import moment from 'moment';
 const google = window.google;
-// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "https://infinite-brook-26465.herokuapp.com";
 
 let apiKey = "http://localhost:8080";
 
