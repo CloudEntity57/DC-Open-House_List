@@ -6,11 +6,19 @@ import currency from 'currency-formatter';
 import moment from 'moment';
 // import _ from "lodash";
 import ReactMap from './ReactMap';
+<<<<<<< HEAD
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "https://infinite-brook-26465.herokuapp.com";
+
+// let apiKey="https://dcopenhouselist.herokuapp.com";
+
+let apiKey = "http://localhost:8080";
+=======
 // let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
 
 let apiKey="https://vast-shore-14133.herokuapp.com";
 
 // let apiKey = "https://localhost:8080";
+>>>>>>> b0245cdd0b07383980950165820e4aa792227933
 
 
 class Results extends Component{
@@ -47,24 +55,16 @@ class Results extends Component{
       axios.get(apiKey + '/info/open_houses').then(
       (response)=>{
         console.log('axios: ',response);
-        response.data.results.forEach((listing)=>{
-          markers.push(listing);
-        });
         // let listings_remaining = markers.slice(10,markers.length);
         // let listings_shown = markers.slice(0,10);
         this.props.storeResults(markers,results);
         this.setState({
           results,
-          markers,
+          markers:response.data.results,
           neighborhood,
-          cache:markers,
+          cache:response.data.results,
           display:'list'
         });
-        // if(neighborhood !=='FullDCArea'){
-        //   this.setState({
-        //     display:'loading'
-        //   });
-        // }
       }).catch((err)=>{
         console.log('error -',err);
       });
@@ -202,7 +202,8 @@ class Results extends Component{
     let item = e.target;
     console.log('selecting');
   }
-  selectAll(e){
+  selectAll(){
+    console.log('imported!');
   }
   sortTime(e){
     let $item = jquery('#down');
@@ -572,7 +573,7 @@ class Results extends Component{
         case 'Southwest':
         dir = 'SW';
         break;
-        case 'Souteast':
+        case 'Southeast':
         dir = 'SE';
         break;
         case 'Northeast':
@@ -617,7 +618,7 @@ class Results extends Component{
         overlap:'hidden'
       };
       let indx = markers.indexOf(listing);
-      console.log('listing index: ',indx);
+      console.log('listing index: ',indx, ' neighborhood: ',neighborhood);
       let reactMap = (neighborhood !== 'FullDCArea' && indx==0) ? ( <ReactMap display={false} viewListing={this.viewListing.bind(this)} updateResults={this.updateResults.bind(this)} neighborhood={this.props.params.neighborhood} markers={markers}/> ) : '';
       // if(neighborhood !=='FullDCArea'
       let result_subd = (<span className='result-subd'>{subd}</span>);

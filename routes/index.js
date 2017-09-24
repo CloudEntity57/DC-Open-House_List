@@ -6,6 +6,7 @@ var FormData = require('form-data');
 var Featured = require('../models/featured.js');
 var formData = new FormData();
 var curl = require('curlrequest');
+var dcdata = require('./dcjson.json');
 
 
 // let domain = (process.env.NODE_ENV==='development') ? 'https://localhost:3000' : 'https://vast-shore-14133.herokuapp.com';
@@ -48,31 +49,32 @@ router.get('/featured',function(req,res,next){
     console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
     // console.log('body:', body); // Print the HTML for the Google homepage.
     body=JSON.parse(body);
-    res.json(body);
+    res.json(dcdata);
   });
 });
 
 router.get('/open_houses',function(req,res,next){
-  console.log('api key: ',apiKey);
-  // let params='';
-  let params = 'latitude,longitude,image_urls,street_name,street_pre_direction,street_post_direction, subdivision,street_number,square_feet,mls_number,list_price,open_house_events,address,full_baths,num_bedrooms,half_baths';
-  let url = "https://api.displet.com/residentials/search?authentication_token="+apiKey+"&open_house=y&state=DC&limit=2000";
-
-  let options = {
-    url:url,
-    headers:{
-      'Accept':'application/javascript',
-      'Referer':domain
-    }
-  }
-
-  request(options, function (error, response, body) {
-    console.log('error:', error); // Print the error if one occurred
-    console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-    // console.log('body:', body); // Print the HTML for the Google homepage.
-    body=JSON.parse(body);
-    res.json(body);
-  });
+  res.json(dcdata);
+  // console.log('api key: ',apiKey);
+  // // let params='';
+  // let params = 'latitude,longitude,image_urls,street_name,street_pre_direction,street_post_direction, subdivision,street_number,square_feet,mls_number,list_price,open_house_events,address,full_baths,num_bedrooms,half_baths';
+  // let url = "https://api.displet.com/residentials/search?authentication_token="+apiKey+"&open_house=y&state=DC&limit=2000";
+  //
+  // let options = {
+  //   url:url,
+  //   headers:{
+  //     'Accept':'application/javascript',
+  //     'Referer':domain
+  //   }
+  // }
+  //
+  // request(options, function (error, response, body) {
+  //   console.log('error:', error); // Print the error if one occurred
+  //   console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+  //   // console.log('body:', body); // Print the HTML for the Google homepage.
+  //   body=JSON.parse(body);
+  //   res.json(dcdata);
+  // });
 });
 
 router.get('/listing/:mls',function(req,res,next){

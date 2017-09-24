@@ -221,10 +221,7 @@ class Search extends Component{
       <div>
           <Header day={day} neighborhood={subd} reload={this.reload.bind(this)}/>
           <div className="wrapper">
-
-            {/* <Map /> */}
               { options }
-              {/* <Days saturday={this.saturday.bind(this)} sunday={this.sunday.bind(this)} pressed_toggle={this.pressed_toggle.bind(this)} /> */}
             <Featured last_place={this.props.last_place} day={this.state.day} neighborhood={subd} setLastPlace={this.setLastPlace.bind(this)} viewListing={this.viewListing.bind(this)}/>
           </div>
       </div>
