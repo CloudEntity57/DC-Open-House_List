@@ -290,6 +290,20 @@ footer .logo-text {
   margin-right: 30px;
 }
 
+
+/*added to test*/
+#header-nav ul li:hover {
+  color: #3e6b92;
+}
+
+
+.navbar-right li:hover {
+  color: #3e6b92;
+}
+
+
+
+
 #header-nav ul li a {
   display: inline;
   height: 100% !important;

@@ -96,6 +96,9 @@ class Neighborhood extends Component{
         case 'Capitol Hill':
         id='capitolhill';
         break;
+        case 'Cleveland Park':
+        id='clevelandpark';
+        break;
         case 'Columbia Heights':
         id='columbiaheights';
         break;
@@ -107,6 +110,9 @@ class Neighborhood extends Component{
         break;
         case 'Eckington':
         id='eckington';
+        break;
+        case 'Foggy Bottom':
+        id='foggybottom';
         break;
         case 'Friendship Heights':
         id='friendshipheights';
@@ -125,6 +131,9 @@ class Neighborhood extends Component{
         break;
         case 'Westend':
         id='westend';
+        break;
+        case 'Woodley Park';
+        id='woodleypark';
         break;
         default:
         id=''
