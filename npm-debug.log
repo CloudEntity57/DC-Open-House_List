@@ -1,63 +1,24 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   'app.json',
-1 verbose cli   '--global' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'build' ]
 2 info using npm@3.10.10
 3 info using node@v6.11.2
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readGlobalPackageData
-7 silly fetchPackageMetaData app.json
-8 silly fetchOtherPackageData app.json
-9 silly cache add args [ 'app.json', null ]
-10 verbose cache add spec app.json
-11 silly cache add parsed spec Result {
-11 silly cache add   raw: 'app.json',
-11 silly cache add   scope: null,
-11 silly cache add   escapedName: 'app.json',
-11 silly cache add   name: null,
-11 silly cache add   rawSpec: 'app.json',
-11 silly cache add   spec: '/Users/hannahschuster/Projects/DC_OpenHouseList/app.json',
-11 silly cache add   type: 'local' }
-12 silly addLocalTarball shasum (computed) da39a3ee5e6b4b0d3255bfef95601890afd80709
-13 verbose addTmpTarball /Users/hannahschuster/Projects/DC_OpenHouseList/app.json not in flight; adding
-14 verbose correctMkdir /Users/hannahschuster/.npm correctMkdir not in flight; initializing
-15 verbose addTmpTarball validating metadata from /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
-16 verbose tar unpack /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
-17 verbose tar unpacking to /var/folders/v6/851tdnfx0659xd8t1mxzrdtc0000gn/T/npm-34168-f614f58b/unpack-6538ecd6
-18 silly gentlyRm /var/folders/v6/851tdnfx0659xd8t1mxzrdtc0000gn/T/npm-34168-f614f58b/unpack-6538ecd6 is being purged
-19 verbose gentlyRm don't care about contents; nuking /var/folders/v6/851tdnfx0659xd8t1mxzrdtc0000gn/T/npm-34168-f614f58b/unpack-6538ecd6
-20 silly gunzTarPerm modes [ '755', '644' ]
-21 error tar.unpack error reading /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
-22 error addLocal Could not install /Users/hannahschuster/Projects/DC_OpenHouseList/app.json
-23 silly fetchPackageMetaData Error: 0-byte tarball
-23 silly fetchPackageMetaData Please run `npm cache clean`
-23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:287:14
-23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
-23 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
-23 silly fetchPackageMetaData  error for app.json Error: 0-byte tarball
-23 silly fetchPackageMetaData Please run `npm cache clean`
-23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:287:14
-23 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
-23 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
-24 silly rollbackFailedOptional Starting
-25 silly rollbackFailedOptional Finishing
-26 silly runTopLevelLifecycles Finishing
-27 silly install printInstalled
-28 verbose stack Error: 0-byte tarball
-28 verbose stack Please run `npm cache clean`
-28 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:287:14
-28 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
-28 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
-29 verbose cwd /Users/hannahschuster/Projects/DC_OpenHouseList
-30 error Darwin 16.6.0
-31 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "app.json" "--global"
-32 error node v6.11.2
-33 error npm  v3.10.10
-34 error 0-byte tarball
-34 error Please run `npm cache clean`
-35 error If you need help, you may report this error at:
-35 error     <https://github.com/npm/npm/issues>
-36 verbose exit [ 1, true ]
+4 verbose stack Error: missing script: build
+4 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:151:19)
+4 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:61:5
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
+4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
+4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
+4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at tryToString (fs.js:456:3)
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:443:12)
+5 verbose cwd /Users/hannahschuster/Projects/DC_OpenHouseList
+6 error Darwin 16.6.0
+7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "build"
+8 error node v6.11.2
+9 error npm  v3.10.10
+10 error missing script: build
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

@@ -525,7 +525,7 @@ class Results extends Component{
         let today ='';
         switch(this.props.params.day){
           case 'saturday':
-          today = ' DDSaturday';
+          today = ' Saturday';
           break;
           case 'sunday':
           today = ' Sunday';
@@ -659,7 +659,7 @@ class Results extends Component{
     console.log('the results in results render: ',results);
     switch(this.state.display){
       case 'list':
-      display=(results.length) ? results : (<div className="no-results-msg">We're sorry - your search for {subd} listings {today} didn't return any results(NEW CHANGES FOR HEROKU AND GITHUB!).</div>);
+      display=(results.length) ? results : (<div className="no-results-msg">We're sorry - your search for {subd} listings {today} didn't return any results.</div>);
       break;
       case 'map':
       display=map;
