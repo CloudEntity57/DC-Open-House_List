@@ -523,10 +523,22 @@ class Results extends Component{
           subd='Southwest Waterfront';
           break;
           case 'westend':
-          subd='Westend';
+          subd='West End';
           break;
           case 'woodleypark':
           subd='Woodley Park';
+          break;
+          case 'nw':
+          subd='NW';
+          break;
+          case 'ne':
+          subd='NE';
+          break;
+          case 'sw':
+          subd='SW';
+          break;
+          case 'se':
+          subd='SE';
           break;
           default:
           subd=''

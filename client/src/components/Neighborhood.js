@@ -22,7 +22,7 @@ class Neighborhood extends Component{
   }
   componentWillMount(){
     //temporary - loading neighborhoods from DB while API key is for Columbia
-    let neighborhoods = ["Full DC Area", "Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Cleveland Park", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Foggy Bottom", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend", "Woodley Park"];
+    let neighborhoods = ["Full DC Area", "Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Cleveland Park", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Foggy Bottom", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend", "Woodley Park", "NW", "NE", "SW", "SE" ];
     // axios.get(apiKey + '/info/neighborhoods').then(
     //   (neighborhoods)=>{
     //     console.log('neighborhoods: ',neighborhoods.data);
@@ -129,11 +129,23 @@ class Neighborhood extends Component{
         case 'Southwest Waterfront':
         id='southwestwaterfront';
         break;
-        case 'Westend':
+        case 'West End':
         id='westend';
         break;
         case 'Woodley Park':
         id='woodleypark';
+        break;
+        case 'NW':
+        id='nw';
+        break;
+        case 'NE':
+        id='ne';
+        break;
+        case 'SW':
+        id='sw';
+        break;
+        case 'SE':
+        id='se';
         break;
         default:
         id=''
