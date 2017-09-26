@@ -489,6 +489,9 @@ class Results extends Component{
           case 'capitolhill':
           subd='Capitol Hill';
           break;
+          case 'clevelandpark':
+          subd='Cleveland Park';
+          break;
           case 'columbiaheights':
           subd='Columbia Heights';
           break;
@@ -500,6 +503,9 @@ class Results extends Component{
           break;
           case 'eckington':
           subd='Eckington';
+          break;
+          case 'foggybottom':
+          subd='Foggy Bottom';
           break;
           case 'friendshipheights':
           subd='Friendship Heights';
@@ -518,6 +524,9 @@ class Results extends Component{
           break;
           case 'westend':
           subd='Westend';
+          break;
+          case 'woodleypark':
+          subd='Woodley Park';
           break;
           default:
           subd=''
