@@ -659,7 +659,7 @@ class Results extends Component{
     console.log('the results in results render: ',results);
     switch(this.state.display){
       case 'list':
-      display=(results.length) ? results : (<div className="no-results-msg">We're sorry - your search for {subd} listings {today} didn't return any results(NEW CHANGES FOR HEROKU).</div>);
+      display=(results.length) ? results : (<div className="no-results-msg">We're sorry - your search for {subd} listings {today} didn't return any results(NEW CHANGES FOR HEROKU AND GITHUB!).</div>);
       break;
       case 'map':
       display=map;
