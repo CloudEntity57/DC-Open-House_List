@@ -206,11 +206,23 @@ footer .logo-text {
   flex-direction: column;
   justify-content: space-around;
 }
-
-.header-title-container img {
+/*original code for header:
+/*.header-title-container img {
   width: 50%;
   margin: 10px 0px;
+}*/
+
+/*added to bring img in header back:*/
+.header-title-container img  {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  /*display: block;
+   margin: auto;
+   margin: 10px 0px;*/
+
 }
+
 
 @media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
   .header-title-container img {

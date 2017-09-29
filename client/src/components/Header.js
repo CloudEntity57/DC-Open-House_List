@@ -46,7 +46,8 @@ class Header extends Component{
 
           </div>
           <div className="header-title-container">
-            <img className="img-responsive" src="./images/DC_open House_sm-10.svg" alt="title" />
+            {/*original <img className="img-responsive" src="./images/DC_open House_sm-10.svg" alt="title" /> */}
+              <img className="img-responsive" src="./images/ScreenShot.jpg" alt="title" />
           </div>
         </div>
         <div className="yellow-bar"></div>
