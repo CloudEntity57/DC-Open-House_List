@@ -22,7 +22,7 @@ class Neighborhood extends Component{
   }
   componentWillMount(){
     //temporary - loading neighborhoods from DB while API key is for Columbia
-    let neighborhoods = ["Full DC Area", "Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Cleveland Park", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Foggy Bottom", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend", "Woodley Park", "NW", "NE", "SW", "SE" ];
+    let neighborhoods = ["Full DC Area", "NW", "NE", "SW", "SE", "Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Cleveland Park", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Foggy Bottom", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend", "Woodley Park"];
     // axios.get(apiKey + '/info/neighborhoods').then(
     //   (neighborhoods)=>{
     //     console.log('neighborhoods: ',neighborhoods.data);

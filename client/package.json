@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "svg-react-loader": "^0.4.5"
   },
   "dependencies": {
     "axios": "^0.16.2",

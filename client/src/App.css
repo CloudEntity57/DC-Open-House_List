@@ -673,7 +673,11 @@ footer .logo-text {
 
 @media (max-width: 950px) {
   .day-btn {
-    width: 275px;
+    width: 270px;
+    height: 116px;
+  }
+  .day-holder{
+    margin-top: -15px;
   }
 }
 
@@ -681,6 +685,7 @@ footer .logo-text {
   .day-btn {
     width: 65vw;
     margin-bottom: 3vh;
+
   }
 }
 
