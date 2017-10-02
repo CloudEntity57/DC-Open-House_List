@@ -523,6 +523,7 @@ footer .logo-text {
 .btn-3d-blue, .btn-3d-blue-down, .btn-3d-blue-results {
   text-align: center;
   z-index: 5001;
+  width: 100px;
 }
 
 .btn-3d-blue-neighborhood {
@@ -540,6 +541,15 @@ footer .logo-text {
   right: 0px;
   /* iPhone 5 ----------- */
 }
+
+/*added hs */
+@media (max-width: 950px) {
+.sort-by-arrow-neigh {
+  width: 55px;
+}
+
+}
+
 
 .sort-by-arrow-neigh span {
   line-height: 2.5em;
