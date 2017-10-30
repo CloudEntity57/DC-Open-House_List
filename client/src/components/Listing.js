@@ -428,14 +428,14 @@ class Listing extends Component{
       <div className="listing-beds">
         <div>{listing_bedrooms}</div>
         {/*<img className="listing-emoji" src={require('../images/bed.svg')} alt="bed" />*/}
-        <img className="listing-emoji" src="https://rawgit.com/CloudEntity57/DC-Open-House_List/master/client/public/images/bed.svg" alt="bed" />
+        <img style={{width:'25px', height:'25px'}} className="listing-emoji" src="https://rawgit.com/CloudEntity57/DC-Open-House_List/master/client/public/images/bed.svg" alt="bed" />
       </div>
     ) : '';
     let bath_img = (listing) ? (
       <div className="listing-baths">
         <div>{listing.full_baths}{halfbaths}</div>
         {/*<img className="listing-emoji" src={require('../images/bath.svg')} alt="bath" />*/}
-        <img className="listing-emoji" src='https://cdn.rawgit.com/CloudEntity57/DC-Open-House_List/6ff8eed3/client/public/images/bath.svg' alt="bath" />
+        <img style={{width:'25px', height:'25px'}} className="listing-emoji" src='https://cdn.rawgit.com/CloudEntity57/DC-Open-House_List/6ff8eed3/client/public/images/bath.svg' alt="bath" />
 
       </div>
     ) : '';
@@ -490,7 +490,9 @@ class Listing extends Component{
       <div className="submit_modal">
         <div className="submit_message rounded">
           <div>We'll be in touch shortly!</div>
-          <img src="../images/DC_open House_sm-10.svg" alt='rlah logo' />
+          {/*<img src="../images/DC_open House_sm-10.svg" alt='rlah logo'/>*/}
+          <img src="https://rawgit.com/CloudEntity57/DC-Open-House_List/master/client/public/images/DC_open%20House_sm-10.svg" alt='rlah logo'/>
+
         </div>
       </div>
     ) : '';

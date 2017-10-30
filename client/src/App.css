@@ -43,6 +43,20 @@ header {
   }
 }
 
+/*added to test hs*/
+
+@media (max-width: 644px) {
+  .navbar-right {
+    width: 35vw !important;
+    margin-top: 12px;
+    display: inline-block;
+  }
+}
+
+
+
+
+
 footer {
   margin: 25px 0px 25px 0px;
   font-size: .75em;

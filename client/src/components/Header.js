@@ -16,7 +16,7 @@ class Header extends Component{
     // let day = this.props.day.toLowerCase();
   }
   render(){
-    let day = (this.props.day && this.props.day !=='NONE') ? (<li onClick={()=>this.props.reload()}><i className="glyphicon glyphicon-play"></i>{this.props.day}</li>) : '';
+    let day = (this.props.day && this.props.day !=='NONE') ? (<li style={{display: 'inline-block'}} onClick={()=>this.props.reload()}><i className="glyphicon glyphicon-play"></i>{this.props.day}</li>) : '';
     let neighborhood = (this.props.neighborhood) ? (<li onClick={this.neighborhood.bind(this)}><i className="glyphicon glyphicon-play"></i>{this.props.neighborhood}</li>) : '';
     return(
       <header>
@@ -33,7 +33,7 @@ class Header extends Component{
           </button>
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav navbar-right">
-              <li onClick={this.reload.bind(this)}><i className="glyphicon glyphicon-play"></i><a href="/index.html">HOME</a></li>
+              <li style={{display: 'inline-block'}} onClick={this.reload.bind(this)}><i className="glyphicon glyphicon-play"></i><a href="/index.html">HOME</a></li>
               { day }
               { neighborhood }
               {/* <li id="saturday" onClick={this.pickDay.bind(this)}><i className="glyphicon glyphicon-play"></i>SATURDAY</li>
