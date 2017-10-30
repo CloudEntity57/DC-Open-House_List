@@ -43,16 +43,14 @@ header {
   }
 }
 
-/*added to test hs*/
+/*added to test hs */
+@media only screen and (max-width: 689px){
+  #header-nav {
+    height: 70px !important;
 
-@media (max-width: 644px) {
-  .navbar-right {
-    width: 35vw !important;
-    margin-top: 12px;
-    display: inline-block;
   }
-}
 
+}
 
 
 
