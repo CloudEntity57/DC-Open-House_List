@@ -19,9 +19,17 @@ header {
   width: 100%;
 }
 
+/*added to test hs*/
+.nav>li>a {
+  padding-left: 0px !important;
+
+}
+
+
 .navbar-right li {
   margin-top: 3px;
   cursor: pointer;
+
 }
 
 .navbar-right li a:focus {
@@ -290,6 +298,7 @@ footer .logo-text {
   min-height: 25px;
   color: #fff;
   padding-left: 25px;
+
 }
 
 @media (max-width: 765px) {
