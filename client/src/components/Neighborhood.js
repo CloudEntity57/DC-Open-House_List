@@ -74,6 +74,7 @@ class Neighborhood extends Component{
       console.log('minified: ',val2,' vs: ',picked);
       if(val2==picked){
         picked = val;
+
       }
     });
 
@@ -166,18 +167,18 @@ class Neighborhood extends Component{
     ): '';
     return(
       <div>
-        <div className="options-title" >PICK A NEIGHBORHOOD</div>
-        <div className="options-comment">(More custom neighborhoods coming soon!)</div>
-        <div className="search-options">
-          <span ref="neighborhood-list" className="btn-3d results-option-neigh neigh-button btn-3d-blue-results-neigh">
-            <div className="neigh-selected">{ selected }</div>
-            { dropdown }
-          </span>
-          <span onClick={this.arrowToggle.bind(this)} className="btn-3d btn-3d-blue-results results-option-neigh sort-by-arrow-neigh" href="#"><div className="glyphicon glyphicon-triangle-bottom"></div></span>
-        </div>
-      </div>
-    );
-  }
+       <div className="options-title" >PICK A NEIGHBORHOOD</div>
+       <div className="options-comment">(More custom neighborhoods coming soon!)</div>
+       <div className="search-options">
+         <span ref="neighborhood-list" className="btn-3d results-option-neigh neigh-button btn-3d-blue-results-neigh">
+           <div className="neigh-selected">{ selected }</div>
+           { dropdown }
+         </span>
+         <span onClick={this.arrowToggle.bind(this)} className="btn-3d btn-3d-blue-results results-option-neigh sort-by-arrow-neigh" href="#"><div className="glyphicon glyphicon-triangle-bottom"></div></span>
+       </div>
+     </div>
+   );
+ }
 }
 
 export default Neighborhood;

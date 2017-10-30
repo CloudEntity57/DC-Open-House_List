@@ -669,6 +669,15 @@ footer .logo-text {
   color: #000;
 }
 
+
+@media only screen and (max-width:765px){
+
+  .btn-3d-blue, .btn-3d-blue-neighborhood, .btn-3d-blue-down, .btn-3d-blue-results {
+  top: -16px;
+
+}
+}
+
 .btn-3d-blue:before, .btn-3d-blue-neighborhood:before, .btn-3d-blue-down:before, .btn-3d-blue-results:before {
   content: '';
   display: inline-block;
