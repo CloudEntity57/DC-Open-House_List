@@ -1729,6 +1729,12 @@ footer .logo-text {
   height: 1.5vw;
 }
 
+@media only screen and (min-width: 1024px){
+  .listing-emoji{
+    width: 43px !important;
+    }
+}
+
 .listing-beds, .listing-baths {
   font-size: .75em;
   display: inline-block;
