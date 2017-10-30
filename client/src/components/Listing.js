@@ -427,13 +427,16 @@ class Listing extends Component{
     let bed_img = (listing) ? (
       <div className="listing-beds">
         <div>{listing_bedrooms}</div>
-        <img className="listing-emoji" src={require('../images/bed.svg')} alt="bed" />
+        {/*<img className="listing-emoji" src={require('../images/bed.svg')} alt="bed" />*/}
+        <img className="listing-emoji" src="https://rawgit.com/CloudEntity57/DC-Open-House_List/master/client/public/images/bed.svg" alt="bed" />
       </div>
     ) : '';
     let bath_img = (listing) ? (
       <div className="listing-baths">
         <div>{listing.full_baths}{halfbaths}</div>
-        <img className="listing-emoji" src={require('../images/bath.svg')} alt="bath" />
+        {/*<img className="listing-emoji" src={require('../images/bath.svg')} alt="bath" />*/}
+        <img className="listing-emoji" src='https://cdn.rawgit.com/CloudEntity57/DC-Open-House_List/6ff8eed3/client/public/images/bath.svg' alt="bath" />
+
       </div>
     ) : '';
 

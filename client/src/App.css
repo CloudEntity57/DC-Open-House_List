@@ -284,6 +284,7 @@ footer .logo-text {
   #header-nav {
     height: 50px;
     overflow-y: visible;
+
   }
 }
 
@@ -333,6 +334,11 @@ footer .logo-text {
     float: right;
     z-index: 10 !important;
     background-color: inherit;
+  }
+  /*testing*/
+  #header-nav ul li a{
+    display: inline;
+    white-space: nowrap;
   }
 }
 
@@ -543,9 +549,10 @@ footer .logo-text {
 }
 
 /*added hs */
-@media (max-width: 950px) {
+@media (max-width: 765px) {
 .sort-by-arrow-neigh {
   width: 55px;
+
 }
 
 }
@@ -990,6 +997,14 @@ footer .logo-text {
   width: 100%;
 }
 
+@media (max-width: 765px){
+  .neigh-selected {
+    width: 210px;
+    font-size: 16px;
+
+  }
+}
+
 .day-text-1 {
   text-align: left;
   font-family: inherit;
@@ -1008,7 +1023,9 @@ footer .logo-text {
   .day-text-2 {
     font-size: 2.5em;
   }
+
 }
+
 
 .search-options, .results-search-options {
   margin: auto;
@@ -1383,6 +1400,8 @@ footer .logo-text {
   .sort-by-arrow span {
     line-height: 2em;
   }
+
+
 }
 
 .down-btn-pressed {
