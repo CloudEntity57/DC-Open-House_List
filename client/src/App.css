@@ -227,11 +227,13 @@ footer .logo-text {
 }
 
 .header-title-container {
+
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
 }
 /*original code for header:
 /*.header-title-container img {
@@ -243,7 +245,8 @@ footer .logo-text {
 .header-title-container img  {
   width: 30%;
   height: 100%;
-  margin: auto;
+  /*margin: auto;*/
+  float: left;
   /*display: block;
    margin: auto;
    margin: 10px 0px;*/

@@ -407,6 +407,7 @@ class Listing extends Component{
     showing = (
       <div style={showing_image} className="photo-container">
         <div className="photo-container-day">{dow} {time} {time2}</div>
+        console.log(time);
       </div>
     )
     //FULLSCREEN IMAGES
