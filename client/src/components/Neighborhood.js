@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
 
-// let apiKey="https://dcopenhouselist.herokuapp.com";
 
-let apiKey = "http://localhost:8080";
+//original heroku app:
+let apiKey="https://vast-shore-14133.herokuapp.com";
+//let apiKey="https://morning-wave-32216.herokuapp.com";
+
+
+// let apiKey = "https://localhost:8https://dcopenhouse.herokuapp.com/0;80";
 
 
 class Neighborhood extends Component{
@@ -18,7 +22,7 @@ class Neighborhood extends Component{
   }
   componentWillMount(){
     //temporary - loading neighborhoods from DB while API key is for Columbia
-    let neighborhoods = ["Full DC Area", "Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend"];
+    let neighborhoods = ["Full DC Area", "NW", "NE", "SW", "SE", "Adams Morgan", "Anacostia", "Brookland", "Capitol Hill", "Cleveland Park", "Columbia Heights", "Deanwood", "Dupont Circle", "Eckington", "Foggy Bottom", "Friendship Heights", "Georgetown", "Logan Circle", "Petworth", "Southwest Waterfront", "Westend", "Woodley Park"];
     // axios.get(apiKey + '/info/neighborhoods').then(
     //   (neighborhoods)=>{
     //     console.log('neighborhoods: ',neighborhoods.data);
@@ -70,6 +74,7 @@ class Neighborhood extends Component{
       console.log('minified: ',val2,' vs: ',picked);
       if(val2==picked){
         picked = val;
+
       }
     });
 
@@ -92,6 +97,9 @@ class Neighborhood extends Component{
         case 'Capitol Hill':
         id='capitolhill';
         break;
+        case 'Cleveland Park':
+        id='clevelandpark';
+        break;
         case 'Columbia Heights':
         id='columbiaheights';
         break;
@@ -103,6 +111,9 @@ class Neighborhood extends Component{
         break;
         case 'Eckington':
         id='eckington';
+        break;
+        case 'Foggy Bottom':
+        id='foggybottom';
         break;
         case 'Friendship Heights':
         id='friendshipheights';
@@ -119,8 +130,23 @@ class Neighborhood extends Component{
         case 'Southwest Waterfront':
         id='southwestwaterfront';
         break;
-        case 'Westend':
+        case 'West End':
         id='westend';
+        break;
+        case 'Woodley Park':
+        id='woodleypark';
+        break;
+        case 'NW':
+        id='nw';
+        break;
+        case 'NE':
+        id='ne';
+        break;
+        case 'SW':
+        id='sw';
+        break;
+        case 'SE':
+        id='se';
         break;
         default:
         id=''
@@ -141,18 +167,18 @@ class Neighborhood extends Component{
     ): '';
     return(
       <div>
-        <div className="options-title" >PICK A NEIGHBORHOOD</div>
-        <div className="options-comment">(More custom neighborhoods coming soon!)</div>
-        <div className="search-options">
-          <span ref="neighborhood-list" className="btn-3d results-option-neigh neigh-button btn-3d-blue-results-neigh">
-            <div className="neigh-selected">{ selected }</div>
-            { dropdown }
-          </span>
-          <span onClick={this.arrowToggle.bind(this)} className="btn-3d btn-3d-blue-results results-option-neigh sort-by-arrow-neigh" href="#"><div className="glyphicon glyphicon-triangle-bottom"></div></span>
-        </div>
-      </div>
-    );
-  }
+       <div className="options-title" >PICK A NEIGHBORHOOD</div>
+       <div className="options-comment">(More custom neighborhoods coming soon!)</div>
+       <div className="search-options">
+         <span ref="neighborhood-list" className="btn-3d results-option-neigh neigh-button btn-3d-blue-results-neigh">
+           <div className="neigh-selected">{ selected }</div>
+           { dropdown }
+         </span>
+         <span onClick={this.arrowToggle.bind(this)} className="btn-3d btn-3d-blue-results results-option-neigh sort-by-arrow-neigh" href="#"><div className="glyphicon glyphicon-triangle-bottom"></div></span>
+       </div>
+     </div>
+   );
+ }
 }
 
 export default Neighborhood;

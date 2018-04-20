@@ -33,7 +33,7 @@ class Results extends Component{
     let i = (stored_results) ? true: false;
     console.log('app has stored results: ',i, ', ',stored_results, ', and raw results: ',this.state.results);
     if(stored_results==false){
-      axios.get('http://localhost:8080/info/open_houses').then(
+      axios.get('https://localhost:8080/info/open_houses').then(
       (response)=>{
         console.log('axios: ',response);
         response.data.results.forEach((listing)=>{
@@ -242,7 +242,7 @@ class Results extends Component{
 
     let id = e.target.id;
     console.log('searching price: ',id);
-    axios.get('http://localhost:8080/info/price/'+id).then((res)=>{
+    axios.get('https://localhost:8080/info/price/'+id).then((res)=>{
       console.log('priced results: ',res);
       this.setState({
         markers:res.data.results,

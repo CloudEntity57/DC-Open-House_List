@@ -19,9 +19,17 @@ header {
   width: 100%;
 }
 
+/*added to test hs*/
+.nav>li>a {
+  padding-left: 0px !important;
+
+}
+
+
 .navbar-right li {
   margin-top: 3px;
   cursor: pointer;
+
 }
 
 .navbar-right li a:focus {
@@ -42,6 +50,18 @@ header {
     z-index: 500000000 !important;
   }
 }
+
+/*added to test hs */
+@media only screen and (max-width: 689px){
+  #header-nav {
+    height: 70px !important;
+
+  }
+
+}
+
+
+
 
 footer {
   margin: 25px 0px 25px 0px;
@@ -76,6 +96,13 @@ footer .footer-info {
   flex-direction: row;
   justify-content: space-after;
   /* iPhone 5 ----------- */
+}
+
+/*added hs */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .navbar-collapse {
+    padding-top: 12px;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
@@ -187,7 +214,7 @@ footer .logo-text {
   height: 100%;
   top: 0px;
   left: 0px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,7db9e8+100&1+0,0+47 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#333333+0,7db9e8+100&1+0,0+47 */
   background: -moz-linear-gradient(left, #333333 0%, rgba(86, 114, 136, 0) 47%, rgba(125, 185, 232, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #333333 0%, rgba(86, 114, 136, 0) 47%, rgba(125, 185, 232, 0) 100%);
@@ -200,17 +227,32 @@ footer .logo-text {
 }
 
 .header-title-container {
+
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
 
-.header-title-container img {
+}
+/*original code for header:
+/*.header-title-container img {
   width: 50%;
   margin: 10px 0px;
+}*/
+
+/*added to bring img in header back:*/
+.header-title-container img  {
+  width: 30%;
+  height: 100%;
+  /*margin: auto;*/
+  float: left;
+  /*display: block;
+   margin: auto;
+   margin: 10px 0px;*/
+
 }
+
 
 @media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
   .header-title-container img {
@@ -266,12 +308,14 @@ footer .logo-text {
   min-height: 25px;
   color: #fff;
   padding-left: 25px;
+
 }
 
 @media (max-width: 765px) {
   #header-nav {
     height: 50px;
     overflow-y: visible;
+
   }
 }
 
@@ -290,6 +334,20 @@ footer .logo-text {
   margin-right: 30px;
 }
 
+
+/*added to test*/
+#header-nav ul li:hover {
+  color: #3e6b92;
+}
+
+
+.navbar-right li:hover {
+  color: #3e6b92;
+}
+
+
+
+
 #header-nav ul li a {
   display: inline;
   height: 100% !important;
@@ -307,6 +365,11 @@ footer .logo-text {
     float: right;
     z-index: 10 !important;
     background-color: inherit;
+  }
+  /*testing*/
+  #header-nav ul li a{
+    display: inline;
+    white-space: nowrap;
   }
 }
 
@@ -497,6 +560,7 @@ footer .logo-text {
 .btn-3d-blue, .btn-3d-blue-down, .btn-3d-blue-results {
   text-align: center;
   z-index: 5001;
+  width: 100px;
 }
 
 .btn-3d-blue-neighborhood {
@@ -514,6 +578,16 @@ footer .logo-text {
   right: 0px;
   /* iPhone 5 ----------- */
 }
+
+/*added hs */
+@media (max-width: 765px) {
+.sort-by-arrow-neigh {
+  width: 55px;
+
+}
+
+}
+
 
 .sort-by-arrow-neigh span {
   line-height: 2.5em;
@@ -598,6 +672,15 @@ footer .logo-text {
   color: #000;
 }
 
+
+@media only screen and (max-width:765px){
+
+  .btn-3d-blue, .btn-3d-blue-neighborhood, .btn-3d-blue-down, .btn-3d-blue-results {
+  top: -16px;
+
+}
+}
+
 .btn-3d-blue:before, .btn-3d-blue-neighborhood:before, .btn-3d-blue-down:before, .btn-3d-blue-results:before {
   content: '';
   display: inline-block;
@@ -647,7 +730,11 @@ footer .logo-text {
 
 @media (max-width: 950px) {
   .day-btn {
-    width: 275px;
+    width: 270px;
+    height: 116px;
+  }
+  .day-holder{
+    margin-top: -15px;
   }
 }
 
@@ -655,6 +742,7 @@ footer .logo-text {
   .day-btn {
     width: 65vw;
     margin-bottom: 3vh;
+
   }
 }
 
@@ -949,6 +1037,14 @@ footer .logo-text {
   width: 100%;
 }
 
+@media (max-width: 765px){
+  .neigh-selected {
+    width: 210px;
+    font-size: 16px;
+
+  }
+}
+
 .day-text-1 {
   text-align: left;
   font-family: inherit;
@@ -967,7 +1063,9 @@ footer .logo-text {
   .day-text-2 {
     font-size: 2.5em;
   }
+
 }
+
 
 .search-options, .results-search-options {
   margin: auto;
@@ -1342,6 +1440,8 @@ footer .logo-text {
   .sort-by-arrow span {
     line-height: 2em;
   }
+
+
 }
 
 .down-btn-pressed {
@@ -1630,6 +1730,12 @@ footer .logo-text {
 .listing-emoji {
   width: 3.5vw;
   height: 1.5vw;
+}
+
+@media only screen and (min-width: 1024px){
+  .listing-emoji{
+    width: 43px !important;
+    }
 }
 
 .listing-beds, .listing-baths {

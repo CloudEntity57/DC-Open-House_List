@@ -9,11 +9,11 @@ import currency from 'currency-formatter';
 import $ from 'jquery';
 import moment from 'moment';
 const google = window.google;
-// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
 
-let apiKey = "http://localhost:8080";
+// let apiKey = "https://localhost:8080";
 
-// let apiKey="https://dcopenhouselist.herokuapp.com";
+let apiKey="https://vast-shore-14133.herokuapp.com";
 
 console.log('listingjs env: ',process.env.REACT_APP_STATUS);
 
@@ -407,6 +407,7 @@ class Listing extends Component{
     showing = (
       <div style={showing_image} className="photo-container">
         <div className="photo-container-day">{dow} {time} {time2}</div>
+      
       </div>
     )
     //FULLSCREEN IMAGES
@@ -427,13 +428,16 @@ class Listing extends Component{
     let bed_img = (listing) ? (
       <div className="listing-beds">
         <div>{listing_bedrooms}</div>
-        <img className="listing-emoji" src={require('../images/bed.svg')} alt="bed" />
+        {/*<img className="listing-emoji" src={require('../images/bed.svg')} alt="bed" />*/}
+        <img style={{width:'25px', height:'25px'}} className="listing-emoji" src="https://rawgit.com/CloudEntity57/DC-Open-House_List/master/client/public/images/bed.svg" alt="bed" />
       </div>
     ) : '';
     let bath_img = (listing) ? (
       <div className="listing-baths">
         <div>{listing.full_baths}{halfbaths}</div>
-        <img className="listing-emoji" src={require('../images/bath.svg')} alt="bath" />
+        {/*<img className="listing-emoji" src={require('../images/bath.svg')} alt="bath" />*/}
+        <img style={{width:'25px', height:'25px'}} className="listing-emoji" src='https://cdn.rawgit.com/CloudEntity57/DC-Open-House_List/6ff8eed3/client/public/images/bath.svg' alt="bath" />
+
       </div>
     ) : '';
 
@@ -487,7 +491,9 @@ class Listing extends Component{
       <div className="submit_modal">
         <div className="submit_message rounded">
           <div>We'll be in touch shortly!</div>
-          <img src="../images/DC_open House_sm-10.svg" alt='rlah logo' />
+          {/*<img src="../images/DC_open House_sm-10.svg" alt='rlah logo'/>*/}
+          <img src="https://rawgit.com/CloudEntity57/DC-Open-House_List/master/client/public/images/DC_open%20House_sm-10.svg" alt='rlah logo'/>
+
         </div>
       </div>
     ) : '';

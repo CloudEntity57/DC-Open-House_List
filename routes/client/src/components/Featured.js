@@ -14,7 +14,7 @@ class Featured extends Component{
   }
   componentWillMount(){
     let featured = [];
-    axios.get('http://localhost:8080/info/featured').then(
+    axios.get('https://localhost:8080/info/featured').then(
       (response)=>{
         console.log('axios: ',response);
         let results = response.data.results;
@@ -84,7 +84,7 @@ class Featured extends Component{
     // let apiKey="82b44a7662b0abb55eebf365a61c50399b512935";
     jquery.ajax({
       // url:"https://api.displet.com/agents/?authentication_token=82b44a7662b0abb55eebf365a61c50399b512935",
-      url:"http://localhost:8080/info/open_houses",
+      url:"https://localhost:8080/info/open_houses",
       method:'GET',
       success:(val)=>{
         console.log('success');

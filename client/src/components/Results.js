@@ -6,12 +6,12 @@ import currency from 'currency-formatter';
 import moment from 'moment';
 // import _ from "lodash";
 import ReactMap from './ReactMap';
-// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "http://localhost:8080" : "http://vast-shore-14133.herokuapp.com";
 
-// let apiKey="https://dcopenhouselist.herokuapp.com";
+// let apiKey = (process.env.REACT_APP_STATUS == 'development') ? "https://localhost:8080" : "https://vast-shore-14133.herokuapp.com";
 
-let apiKey = "http://localhost:8080";
+let apiKey="https://vast-shore-14133.herokuapp.com";
 
+// let apiKey = "https://localhost:8080";
 
 class Results extends Component{
   constructor(props){
@@ -489,6 +489,9 @@ class Results extends Component{
           case 'capitolhill':
           subd='Capitol Hill';
           break;
+          case 'clevelandpark':
+          subd='Cleveland Park';
+          break;
           case 'columbiaheights':
           subd='Columbia Heights';
           break;
@@ -500,6 +503,9 @@ class Results extends Component{
           break;
           case 'eckington':
           subd='Eckington';
+          break;
+          case 'foggybottom':
+          subd='Foggy Bottom';
           break;
           case 'friendshipheights':
           subd='Friendship Heights';
@@ -517,7 +523,22 @@ class Results extends Component{
           subd='Southwest Waterfront';
           break;
           case 'westend':
-          subd='Westend';
+          subd='West End';
+          break;
+          case 'woodleypark':
+          subd='Woodley Park';
+          break;
+          case 'nw':
+          subd='NW';
+          break;
+          case 'ne':
+          subd='NE';
+          break;
+          case 'sw':
+          subd='SW';
+          break;
+          case 'se':
+          subd='SE';
           break;
           default:
           subd=''
@@ -525,10 +546,10 @@ class Results extends Component{
         let today ='';
         switch(this.props.params.day){
           case 'saturday':
-          today = ' on Saturday';
+          today = 'on Saturday';
           break;
           case 'sunday':
-          today = ' on Sunday';
+          today = 'on Sunday';
           break;
           default:
           today = '.'
@@ -650,7 +671,7 @@ class Results extends Component{
 
 
 
-    let spinner = (<div className="no-results-msg">Searching for {subd} open houses{today} Thanks for your patience.<br/><img className="spinner" src={require("../images/loadcontent.gif")} alt="please wait"/></div>);
+    let spinner = (<div className="no-results-msg">Searching for {subd} open houses {today}. Thanks for your patience.<br/><img className="spinner" src={require("../images/loadcontent.gif")} alt="please wait"/></div>);
     results = (results) ? results.filter((val)=>{
       if(val){
         return val;

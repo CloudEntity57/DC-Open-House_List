@@ -663,7 +663,7 @@ MarkerClusterer.prototype.redraw = function() {
 
 /**
  * Calculates the distance between two latlng locations in km.
- *  http://www.movable-type.co.uk/scripts/latlong.html
+ *  https://www.movable-type.co.uk/scripts/latlong.html
  *
  *  {google.maps.LatLng} p1 The first lat lng point.
  *  {google.maps.LatLng} p2 The second lat lng point.
